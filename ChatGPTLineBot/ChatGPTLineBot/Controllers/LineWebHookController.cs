@@ -34,7 +34,7 @@ namespace isRock.Template
                 //設定ChannelAccessToken
                 
                 //配合Line Verify
-                if (ReceivedMessage.events == null || ReceivedMessage.events.Count() <= 0 ||
+                if (ReceivedMessage == null || ReceivedMessage.events == null || ReceivedMessage.events.Count() <= 0 ||
                     ReceivedMessage.events.FirstOrDefault().replyToken == "00000000000000000000000000000000") return Ok();
                 //取得Line Event
                 var LineEvent = this.ReceivedMessage.events.FirstOrDefault();
@@ -44,13 +44,8 @@ namespace isRock.Template
                 {
                     var result = await _chatGPTService.CallChatGPT(LineEvent.message.text);
                     responseMsg = result.Choices.FirstOrDefault().Text.Trim();
+                    this.ReplyMessage(LineEvent.replyToken, responseMsg);
                 }
-                else if (LineEvent.type.ToLower() == "message")
-                    responseMsg = $"收到 event : {LineEvent.type} type: {LineEvent.message.type} ";
-                else
-                    responseMsg = $"收到 event : {LineEvent.type} ";
-                //回覆訊息
-                this.ReplyMessage(LineEvent.replyToken, responseMsg);
                 //response OK
                 return Ok();
             }
