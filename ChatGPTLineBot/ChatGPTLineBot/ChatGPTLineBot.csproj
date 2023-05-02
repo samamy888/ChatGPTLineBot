@@ -9,12 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LineBotSDK" Version="2.9.36" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
-    <PackageReference Include="NLog" Version="5.1.0" />
-    <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="ChatGPT.Net" Version="2.0.0" />
+    <PackageReference Include="LineBotSDK" Version="2.10.37" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog" Version="5.1.4" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lib.Redis.Client\Lib.Redis.Client.csproj" />
   </ItemGroup>
 
 </Project>

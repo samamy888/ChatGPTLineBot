@@ -2,3 +2,6 @@
 /ChatGPTLineBot/ChatGPTLineBot/obj
 /.vs
 /ChatGPTLineBot/.vs
+/Lib.Redis.Client/.vs
+/Lib.Redis.Client/obj
+/Lib.Redis.Client/bin

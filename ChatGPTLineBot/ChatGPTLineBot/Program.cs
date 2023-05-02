@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<Config>(builder.Configuration.GetSection("Config"));
-builder.Services.AddScoped<ChatGPTService>();
+builder.Services.AddSingleton<ChatGPTService>();
 builder.Logging.AddNLog("Config/NLog.config");
 
 var app = builder.Build();

@@ -4,7 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\30364\Desktop\Program\Demo\chatGPTLineBot\ChatGPTLineBot\ChatGPTLineBot\bin\Release\net6.0\publish\</_PublishTargetUrl>
-    <History>True|2023-02-13T08:37:08.8746427Z;True|2023-02-13T16:09:13.8739324+08:00;True|2023-02-13T16:05:58.8473916+08:00;</History>
+    <_PublishTargetUrl>C:\Users\30364\Desktop\Program\Demo\chatGPTLineBot\ChatGPTLineBot\ChatGPTLineBot\bin\LineBot</_PublishTargetUrl>
+    <History>True|2023-05-02T07:40:17.6508541Z;True|2023-05-02T11:55:37.5697254+08:00;True|2023-03-07T14:52:16.3282636+08:00;True|2023-03-07T14:49:20.7362088+08:00;True|2023-03-07T11:04:17.4041955+08:00;True|2023-03-07T09:56:47.2505443+08:00;True|2023-03-07T09:56:06.7622607+08:00;True|2023-03-07T09:52:43.7119806+08:00;True|2023-02-18T13:44:22.6254956+08:00;True|2023-02-13T16:37:08.8746427+08:00;True|2023-02-13T16:09:13.8739324+08:00;True|2023-02-13T16:05:58.8473916+08:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
 </Project>
